@@ -5,35 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root,
-
-
-.spaced-text {
-  margin-bottom: 20px; /* or padding-bottom: 20px; */
-}
-
-
-
-.horizontal-colored-region {
-  background-color: green;
-  height: 20px;
-  width: 100%;
-}
-
-
-
-.cian-blue-text {
-  color: #115E8A;
-}
-
-.bg-cian-blue {
-  background-color: rgb(17, 94, 138);
-}
-
-
-
-
 [data-bs-theme=light] {
-  --bs-cian-blue: #115E8A;
   --bs-blue: #1717e5;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -72,7 +44,6 @@
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 32, 32, 32;
-  --bs-cian-blue-rgb: 17, 94, 138;
   --bs-primary-text-emphasis: #09095c;
   --bs-secondary-text-emphasis: #373739;
   --bs-success-text-emphasis: #0a3622;
@@ -3930,7 +3901,7 @@ textarea.form-control-lg {
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
-  --bs-navbar-color: rgba(17, 94, 138, 0.7);
+  --bs-navbar-color: rgba(17, 17, 17, 0.7);
   --bs-navbar-hover-color: rgba(17, 17, 17, 0.8);
   --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
   --bs-navbar-active-color: rgba(17, 17, 17, 0.9);
@@ -4348,19 +4319,6 @@ textarea.form-control-lg {
   --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-
-
-.navbar-blue {
-  --bs-navbar-color: rgba(17, 94, 138, 0.55);
-  --bs-navbar-hover-color: rgba(17, 94, 138, 0.75);
-  --bs-navbar-disabled-color: rgba(17, 94, 138, 0.25);
-  --bs-navbar-active-color: #fff;
-  --bs-navbar-brand-color: #fff;
-  --bs-navbar-brand-hover-color: #fff;
-  --bs-navbar-toggler-border-color: rgba(17, 94, 138, 0.1);
-  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
 
 [data-bs-theme=dark] .navbar-toggler-icon {
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -8990,12 +8948,6 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-cian-blue {
-  --bs-cian-blue-rgb: 17, 94, 138; /* Change the RGB values as needed */
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-cian-blue-rgb), var(--bs-bg-opacity)) !important;
-}
-
 .bg-black {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
@@ -12777,7 +12729,7 @@ img {
 .navbar.scrolled {
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: #111;
+  background-color: #115E8A;
 }
 
 .display-big {
@@ -12793,6 +12745,7 @@ img {
 
 .link-fancy-light {
   color: #fff;
+  text-decoration: 0 ;
 }
 
 .link-fancy:hover {
@@ -12812,7 +12765,7 @@ img {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-image: linear-gradient(90deg, #1717e5 0, #1717e5 25%, transparent 0, transparent 50%, #1717e5 0, #1717e5 75%, transparent 0, transparent);
+  background-image: linear-gradient(90deg, #fff 0, #fff 25%, transparent 0, transparent 50%, #fff 0, #fff 75%, transparent 0, transparent);
   background-repeat: no-repeat;
   background-position: 0;
   background-size: 400% 1px;
@@ -12820,7 +12773,7 @@ img {
 }
 
 .link-fancy-light:before {
-  background-image: linear-gradient(90deg, #fff 0, #fff 25%, transparent 0, transparent 50%, #fff 0, #fff 75%, transparent 0, transparent);
+  background-image: linear-gradient(90deg, #fff 0, #fff 25%, transparent 0, transparent 50%, #115E8A 0, #115E8A 75%, transparent 0, transparent);
 }
 
 .link-fancy:hover:before {
@@ -12851,21 +12804,13 @@ img {
   font-size: 1.33rem;
 }
 
-
-.navbar-cian-blue a.nav-link {
-  color: #115E8A;
-  border-bottom: 2px solid transparent;
-  margin: 0 1rem;
-  font-size: 1.33rem;
-}
-
 .navbar-expand-lg .navbar-nav a.nav-link {
   padding-left: 0rem;
   padding-right: 0rem;
 }
 
 .navbar-dark a.nav-link:hover {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #115E8A;
 }
 
 .gradient {
@@ -13052,10 +12997,6 @@ img {
 
 .bg-black {
   background-color: #111;
-}
-
-.bg-cian-blue {
-  background-color: #115E8A;
 }
 
 .bg-white-90 {
