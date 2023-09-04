@@ -5,6 +5,19 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root,
+
+
+
+
+
+
+
+
+
+
+
+
+
 [data-bs-theme=light] {
   --bs-blue: #1717e5;
   --bs-indigo: #6610f2;
@@ -14128,3 +14141,34 @@ img {
     transform: perspective(2500px) rotateX(0);
   }
 }
+
+
+
+
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container width */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the text overlay span the entire width of the container */
+  height: 100%; /* Make the text overlay span the entire height of the container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+  padding: 20px;
+  color: white; /* Text color */
+
+}
+
