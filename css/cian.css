@@ -2,3 +2,21 @@ main .container{
 margin-bottom: 80px;}
 
 
+body.navbar-cian .navbar {
+  /* Styles for the navbar */
+
+  /* Add any other styles here */
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  /* CSS rules for mobile screens */
+  body.navbar-cian .navbar {
+    position: relative; /* Change the positioning of the navbar */
+  }
+
+  /* Add padding or margin to create space between the navbar and content */
+  .content {
+    padding-top: 10px; /* Adjust as needed */
+  }
+}
